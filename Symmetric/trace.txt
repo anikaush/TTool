@@ -1,8 +1,0 @@
-#0 time=0.000489025 block=Bob type=state_entering state=__StartState
-#1 time=0.000594558 block=Bob type=state_entering state=waitingForMessage
-#2 time=0.000669937 block=Alice type=state_entering state=__StartState
-#3 time=0.000721876 block=Alice type=state_entering state=makingMessage
-#4 time=0.000730111 block=Alice type=variable_modification variable=m__data setTo=0
-#5 time=0.000736037 block=Alice type=function_call func=sencrypt parameters=0,0
-#6 time=0.008461605 block=Alice type=variable_modification variable=m1__data setTo=0
-#7 time=0.008504722 block=Alice type=function_call func=sendInSeveralChunks parameters=0
