@@ -13,7 +13,7 @@ extern int myLovelyArray[100];
 extern int nextAvailableID ;
 char key_dec[] = "thisisasecretkey";
 
-extern int ReceiArray[100];
+ int ReceiArray[100];
  char Receistring[160];
 
 int m2__data;
@@ -51,22 +51,9 @@ int __userImplemented__Bob__receiveInSeveralChunks(int id){
     {    __params0__bob[0] = &m2__data;
           makeNewRequest(&__req0__bob, 2849, RECEIVE_SYNC_REQUEST, 0, 0, 0, 1, __params0__bob);
          
- /*           printf("param0 Bob __req0 1 %d : %d \n",z,__req0__bob); 
-      printf("param0 Bob  RECEIVE_SYNC_REQUEST %d : %d \n",z,RECEIVE_SYNC_REQUEST); 
-      printf("param0 Bob __System_chin__System_chout %d : %d \n",z,__System_chin__System_chout); 
-      printf("param0 Bob __list 1 %d : %d \n",z,__list__bob); 
-      
-      printf("param0 Bob m1__data %d : %d \n",z,m1__data); 
-      printf("param0 Bob m2__data %d : %d \n",z,&m2__data); 
-      printf("param0 Bob __params0[0] %d : %d \n",z,__params0__bob[0]); 
-       printf("---------------------------------- \n");
-  */
           __req0__bob.syncChannel = &__System_chin__System_chout;
           __returnRequest__bob = executeOneRequest(&__list__bob, &__req0__bob);
-       /*   
-           printf("param0 Bob __list 2 %d : %d \n",z,__list__bob); 
-      printf("param0 Bob __req0 2  %d : %d \n",z,__req0__bob); 
-      printf("param0 Bob __returnRequest %d : %d \n",z,__returnRequest__bob); */
+     
           clearListOfRequests(&__list__bob);
     
      
