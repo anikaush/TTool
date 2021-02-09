@@ -62,26 +62,7 @@ char* substring(char *destination, const char *source, int beg, int n)
    return destination;
 }
 
-/*
-void __userImplemented__Alice__sendInSeveralChunks(int msg__data) {
-  printf("\sendinginseveral:%d\t",msg__data);
-  
-   char text[]="hello world";
-   char sub[];
-   int chunkSize = 4;
-          int stringLength = text.length;
-          for (int i = 0; i < stringLength ; i += chunkSize)
-          {
-    
-                if (i + chunkSize > stringLength) 
-               {chunkSize = stringLength  - i;}
-                 Substring(sub,text,i, chunkSize);
-    
-          }
-  
-}
 
-*/
 
 void __userImplemented__Alice__sendInSeveralChunks(int m1__data) {
     printf("send in several chunks has been called\n");
@@ -107,7 +88,7 @@ void __userImplemented__Alice__sendInSeveralChunks(int m1__data) {
 
       clearListOfRequests(&__list);
       
-      //printf("param0 %d : %d \n",j,__params0); 
+      
       
        
    }
@@ -164,16 +145,9 @@ k__data) {
     
      myLovelyArray[nextAvailableID] = (int) (enc_out[j]);
     
-    printf("myLovelyArray[%d] = ",nextAvailableID);
+     printf("myLovelyArray[%d] = ",nextAvailableID);
      printf(" %d\n",myLovelyArray[nextAvailableID]);
      
-     /*printf("enc_out[0] is: %c\t", enc_out[0]);
-        
-        printf("myLovelyArray[0] in int: %d \n", myLovelyArray[0]);
-    
-        char msg_d = (char) (myLovelyArray[0]);
-        printf("myLovelyArray[0] in char: %c \n", msg_d);*/
-    
      
      if(nextAvailableID<99) {
           nextAvailableID ++;
